@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_static/css/main.css">
+    <link rel="stylesheet" href="_static/css/checkout.css">
+    <title>Webshop - Ailiv</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="index.html">
+            <img class="logo__graphic" src="_static/img/ailiv-logo.svg" alt="logo Ailiv">
+            </a>
+            <div class="hamburger">
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="gepersonaliseerd-bloemwerk.html">Gepersonaliseerd bloemwerk</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Trouwboeketten</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Rouwwerk</a>
+                    </li>
+
+                    <li>
+                        <a href="seizoensdecoratie.html">Seizoensdecoratie</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Aankleding</a>
+                    </li>
+
+                    <li>
+                        <a href="webshop.html">Webshop</a>
+                    </li>
+                </ul>
+            </div>
+            <div class = "nav__button">
+                <a href="#" class="button">Winkelmandje</a>
+                <div class="slide">
+                    <div class="slide__text">
+                        <p>uw winkelmandje</p>
+                    </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="pay">
+                        <p>Subtotaal</p>
+                        <a class="btnpay"href="checkout.html"><p>Naar betalen</p></a>
+                    </div>
+                    <p class="close">X</p>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+        <p class="to-top">
+            TOP
+        </p>
+        <form class="checkout_form" action="./index.html">
+            <div class="form__page">
+                <div class="order-small">
+                    <h2>Overzicht van uw bestelling</h2>
+                    <div class="cart">
+
+                    </div>
+                    <p>Kleur: wit</p>
+                    <p>Vaas bijbestellen: Ja </p>
+                    <p>Bindwijze: Kortgebonden stelen</p>
+                </div>
+            </div>
+            <article class="big__form">
+                <article class = "order-form">
+                    <div class = "order">
+                        <h3>
+                            klanteninformatie
+                        </h3>   
+                        <p>*Vereist</p>
+                    </div>
+                    <div class = "layout-padding">
+                        <label for="email">email*</label>
+                        <input type="email" id="email" name="user_email" required/> 
+                    </div> 
+                </article>
+            
+                <article class = "shippingadres">
+                    <div class = "order">
+                        <h3>Verzendadres </h3>  
+                        <p>*Vereist</p> 
+                    </div>
+            
+                    <div class = "form__shipping">
+                        <label for="name">naam*</label>
+                        <input type="text" id="name" name="user_name" required/>
+                
+                        <label for="adres">adres*</label>
+                        <input type="text" id="adres" name="user_adres1" required/>
+                        <input type="text" id="adres" name="user_adres2" required/>
+            
+                        <div class = "container">
+                            <div class = "shipping">
+                                <label for="city">gemeente*</label>
+                                <input type="text" id="city" name="user_city" required/>
+                            </div>
+                    
+                            <div class = "shipping">
+                                <label for="province">provincie</label>
+                                <input type="text" id="province" name="user_province" />
+                            </div>
+                    
+                            <div class = "shipping">
+                                <label for="zip">postcode*</label>
+                                <input type="text" id="ip" name="zip" required/>
+                            </div>
+                        </div>
+            
+                        <label for="country">land*</label>      
+                        <select id="country" name="country"required>
+                            <option value="belgium">Belgium</option>
+                            <option value="spain">Spain</option>
+                            <option value="france">France</option>
+                        </select>    
+                    </div>
+                </article>
+                
+                <article>
+                    <div class="order">
+                        <h3>
+                            Afhalen of Thuislevering   
+                        </h3>   
+                    </div>
+                
+                    <ul class="delivery">
+            
+                        <li>
+                            <input type="radio" id="beernem" name="adress" value="beernem" checked>
+                            <label for="homedelivery">Thuislevering in Beernem</label>
+                            <p>€10</p>
+                        </li>
+                        <li>
+                            <input type="radio" id="home" name="adress" value="home-short">
+                            <label for="home_deli">Thuislevering in Knesselare, Aalter, Oostkamp of Sijsele</label>
+                            <p>€10</p>
+                        </li>
+                
+                        <li>
+                            <input type="radio" id="takeA" name="adress" value="takeA">
+                            <label for="take_sat">Afhalen op zaterdag (tussen 11u en 18u)</label>
+                            <p>€0</p>
+                        </li>
+            
+                        <li>
+                            <input type="radio" id="takeB" name="adress" value="takeB">
+                            <label for="take_son">Afhalen op zondag (tussen 8u en 12u)</label>
+                            <p>€0</p>
+                
+                        </li>
+            
+                        <li>
+                            <input type="radio" id="home-far" name="adressl" value="home-far">
+                            <label for="home_far">Levering buiten Beernem, Knesselare, Aalter, Oostkamp of Sijsele</label>
+                            <p>€10</p>
+                            
+                        </li>
+                    </ul>
+                </article>  
+            
+                <article class = "sender">
+                    <div class = "order">
+                        <h3>
+                            Gepersonaliseerde boodschap 
+                        </h3>
+        
+                    </div>   
+                    <div class = "layout-padding">
+                        <label for="from">van</label>
+                        <input type="text" id="from" placeholder="Naam van de schenker" name="user_name" required/>
+            
+                        <label for="message">boodschap</label>
+                        <textarea  placeholder="Describe yourself here..." id="message" name="message" required>
+                        </textarea>
+            
+                        <div class = "checkbox">
+                            <input type="checkbox" id="checkbox__message"   name="checkbox__1">
+                            <label for="checkbox__message">Anoniem</label>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class = "payment">
+                    <div class = "order">
+                        <h3>
+                            Betaling met kredietkaart
+                        </h3> 
+                        <p>*vereist</p> 
+                    </div>
+
+                    <div class = "layout">
+                        <label for="cart">kaartnummer*</label>
+                        <input type="text" placeholder="1234 1234 1234 1234" id="cart" name="cart__number" required/>
+            
+                        <div class = "container__short">
+                            <div class = "payment__short">
+                                <label for="date">vervaldatum*</label>
+                                <input type="text"  placeholder="MM/JJ"  id="date" name="cart__date" required/>
+                            </div>
+            
+                            <div class = "payment__short">
+                                <label for="cvc">veiligheidscode*</label>
+                                <input type="number" id ="cvc" name="cvv"placeholder="CVC" value = required/>        
+                            </div>
+                        </div>
+                        <div class = "checkbox">
+                            <input type="checkbox" id="checkbox__factuur" name= "checkbox__2">
+                            <label for="checkbox__factuur"> facturatie is hetzelfde als leveringsadres</label>
+                        </div>
+                    </div>
+                </article>
+            
+                <article class = "factuuradres">
+                    <div class = "order">
+                        <h3>
+                            Facturatieadres
+                        </h3>  
+                        <p>*Vereist</p> 
+                    </div>
+            
+                    <div class = "form__shippingadres layout-padding">
+                        <label for="name_facturatie">naam*</label>
+                        <input type="text" id="name_facturatie" name="user_name" required/>
+                
+                        <label for="adres">adres*</label>
+                        <input type="text" id="adres_facturatie" name="user_adres3" required/>
+                        <input type="text" id="adres_facturatie" name="user_adres4" required/>
+            
+                        <div class = "container__short">
+                            <div class = "shipping__short">
+                            <label for="city_facturatie">gemeente*</label>
+                            <input type="text" id="city_facturatie" name="user_city" required/>
+                        </div>
+                    
+                        <div class = "shipping__short">
+                            <label for="provincie_facturatie">provincie</label>
+                            <input type="text" id="provincie_facturatie" name="user_provincie" />
+                        </div>
+                    
+                        <div class = "shipping__short">
+                            <label for="zip_facturatie">postcode*</label>
+                            <input type="text" id="zip_facturatie" name="user_zip" required/>
+                        </div>
+                    </div>
+            
+                    <label for="country_facturatie">land*</label>      
+                        <select id="country_facturatie" name="user_country"required>
+                            <option value="belgium">Belgium</option>
+                            <option value="spain">Spain</option>
+                            <option value="france">France</option>
+                        </select>    
+                </article>
+            
+                <article class="message">
+                    <div class="order">
+                        <h3>
+                            Overzicht
+                        </h3> 
+                    </div> 
+                    <ul class = "form__total layout-padding"> 
+                        <li> 
+                            <p>Subtotaal</p>
+                            <p>€50</p>
+                        </li>
+            
+                        <li> 
+                            <p>Country Taxes</p>
+                            <p>€10</p>
+                        </li>
+                        <li> 
+                            <p>Thuislevering in Knesselare, Aalter, Oostkamp of Sijsele</p>
+                            <p>€10</p>
+                        </li>
+                        <li> 
+                            <p>Totaal</p>
+                            <p class = "bold">€50</p>
+                        </li>
+                    </ul> 
+                </article>
+                <input type="submit" id = "botton__checkout"value="Plaats bestelling!">
+            </article>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__navbar">
+                        <a href="#">Gepersonaliseerd bloemwerk</a>
+                        <span class="stripe">-</span>
+                        <a href="#">Trouwboeketten</a>
+                        <span class="stripe">-</span>
+                        <a href="#">Seizoensdecoratie</a>
+                        <span class="stripe">-</span>
+                        <a href="#">Rouwwerk op maat</a>
+                        <span class="stripe">-</span>
+                        <a href="#">Aankleding op locatie</a>
+                        <span class="stripe">-</span>
+                        <a href="#">Webshop</a>
+                        <span class="stripe">-</span>
+                        <a href="#">contact</a>
+            </div>
+            <div class="footer__contact">
+                <a class="gsm" href="#">GSM 0474 99 23 45</a>
+                <a class="mail" href="#">E-mail Lievecortier@ailiv.be</a>
+            </div>
+        </div>
+        <div class="footer__container__small">
+            <div class="copyright">
+                <p>
+                    Copyright © 2020 Ailiv, Lieve Cortier. Alle rechten voorbehouden. – Grootmoers 3, 8730 Oedelem – Ondernemingsnummer 0749.728.044 
+                </p>
+            </div>
+            <div class="voorwaarden">
+                <p>Algemene voorwaarden Beheer cookies</p>
+            </div>
+            <div class="made">
+                <p>Deze website werd met trots gemaakt door De Formatie</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="_static/js/main.js"></script>
+</body>
+</html>

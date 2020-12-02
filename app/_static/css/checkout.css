@@ -1,0 +1,95 @@
+.form__page {
+    border-top: 1px solid #e4e4e4;
+    background-color: #e4e4e4;
+    width: 100%;
+}
+
+.order-small {
+    background-color: #fff;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.order h2 {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    letter-spacing: .05em;
+    padding: 2rem;
+}
+
+.cart {
+    border-top: 1px solid #e4e4e4;
+}
+
+.cart .cart__picture{
+    width: 10rem;
+    padding: 2rem;
+}
+
+.order{
+    display: flex;
+    width: 65%;
+    margin: 0 auto;
+    border-bottom: 1px solid green;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    justify-content:space-between ;
+    align-items: baseline;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shipping {
+    width: 30%
+}
+
+.form__shipping {
+    text-transform: uppercase;
+}
+
+.sender label {
+    text-transform: uppercase;
+}
+
+.payment label {
+    text-transform: uppercase;
+}
+
+.delivery{
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #00372b;
+}
+
+.delivery label,
+.delivery p,
+.delivery.togheter{
+    margin-left: 13%;
+}
+
+.delivery li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.delivery li:not(:last-child){
+    border-bottom: 1px solid #00372b;
+}
+
+.delivery input{
+    width: 4rem;
+    position: absolute;
+}
+
+.payment {
+    width: 50%;
+}
