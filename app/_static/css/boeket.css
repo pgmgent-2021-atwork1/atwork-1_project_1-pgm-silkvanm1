@@ -1,0 +1,52 @@
+.bouquet__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bouquet__detail {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 100%;
+    width: 30%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.bouquet__detail img {
+    height: 31rem;
+    object-fit: cover;
+    margin-bottom: 1rem;;
+}
+
+.form-boeket {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem; 
+}
+
+#cart__button__detail {
+    margin: 0 auto;
+}
+
+.care {
+    margin: 0 auto;
+    width: 70%;
+    padding: 1rem 0 6rem 0;
+}
+
+.care h2 {
+    padding: 1rem 0;
+}
+
+.care h3 {
+    color: #93c683;
+    font-family: 'Bilingual serif font';
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}

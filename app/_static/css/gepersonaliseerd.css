@@ -1,0 +1,169 @@
+.special-occasion__container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff8e1;
+    max-width: 100%;
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.special-occasion__container h1 {
+    margin: 5rem 2rem 2rem 5rem;
+    letter-spacing: .05em;
+    line-height: 1.3em;
+}
+
+.special-occasion__container p {
+    margin: 2rem 5rem 5rem 5rem;
+}
+
+.special-occasion {
+    display: block;
+    width: 50%;
+}
+
+.flower__container img {
+    position: relative;
+    width: 100%;
+    float: right;
+    top: -1rem;
+}
+
+.flower__container {
+    margin: 0 auto;
+    width: 40%;
+}
+
+/* Intermezzo */
+
+.together {
+    width: 58%;
+    margin: 0 auto;
+}
+
+.together p {
+    padding: 1rem;
+}
+
+/* Voorbeelden  */
+
+.examples {
+    max-width: 100%;
+    width: 65%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.examples__container {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.examples__container ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+    justify-content: space-between;
+}
+
+.examples__container li {
+    list-style-type: none;
+    text-decoration-color: #f2d6e3;
+}
+
+.examples__photo a {
+    text-decoration-color: #f2d6e3;
+}
+
+.examples__photo a img {
+    height: 22.3rem;
+    width: 15rem;
+    object-fit: cover;
+    box-shadow: 13px 13px #fff8e1;
+}
+
+/* Interesse */
+
+.interesse {
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.interesse h2 {
+    line-height: 2.5rem;
+    letter-spacing: .05em;
+}
+
+/* Formulier */
+
+.container__form {
+    background-color: #00372b;
+    color: #d3f4da;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 72%;
+    margin-bottom: 2rem;
+}
+
+.form {
+    width: 55%; 
+}
+
+.form__text {
+    background-color: #93c683;
+    height: 6.25rem;
+}
+
+.form__button {
+    box-sizing: border-box;
+    border: 1px solid #00b62f;
+    border-radius: 10px;
+    padding: 0.5rem 0.7rem;
+    width: 6rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    display: inline-block;
+}
+
+input {
+    display: block;
+    background-color: #93c683;
+    margin-left: 1rem;
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border-color: #93c683;
+}
+
+textarea {
+    display: block;
+    background-color: #93c683;
+    margin-left: 1rem;
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border-color: #93c683;
+}
+
+.direct-contact {
+    width: 38%;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding-top: 3rem;
+}
